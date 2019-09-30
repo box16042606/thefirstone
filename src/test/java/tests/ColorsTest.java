@@ -1,7 +1,11 @@
+package tests;
+
 import org.testng.Assert;
 import org.testng.annotations.AfterTest;
 import org.testng.annotations.BeforeTest;
 import org.testng.annotations.Test;
+import pages.HomePage;
+import tests.TestBase;
 
 import static java.lang.Thread.sleep;
 
@@ -14,7 +18,7 @@ public class ColorsTest extends TestBase {
     }
 
     @Test
-    public void login() throws InterruptedException {
+    public void testColors() throws InterruptedException {
 
         moveToElement(HomePage.letterR, 10, 10);
         sleep(200);
@@ -34,7 +38,7 @@ public class ColorsTest extends TestBase {
     }
 
     @AfterTest
-    public void postConditionStep() {
+    public void tearDown() {
         driver.quit();
     }
 }

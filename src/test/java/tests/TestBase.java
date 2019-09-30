@@ -1,3 +1,5 @@
+package tests;
+
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
@@ -46,6 +48,10 @@ public class TestBase {
         if (maximizeWindow) {
             driver.manage().window().maximize();
         }
+    }
+
+    void checkHomePageIsLoaded(String title) {
+       driver.getTitle();
     }
 
     public void moveToElement(String elementLocation, int xOffset, int yOffset) {

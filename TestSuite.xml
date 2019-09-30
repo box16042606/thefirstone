@@ -3,7 +3,7 @@
 <suite name="Suite"  >
     <test name="TestBasePage">
         <classes>
-            <class name="ColorsTest"/>
+            <class name="tests.ColorsTest"/>
         </classes>
     </test>
 </suite>
